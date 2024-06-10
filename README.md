@@ -1,7 +1,5 @@
 ## INTRODUCTION
 
-The Migration Assignment module is a DESCRIBE_THE_MODULE_HERE.
-
 The primary use case for this module is to Create a custom entity named as "Custom Entity"
 
 - Custom Entity comes with 5 fields - Title, Id, City, location, Population, State (also status, created & changed)
@@ -13,6 +11,7 @@ Location field of the custom entity is dependent on Geofield contributed module 
 Same Needs to be installed 
 
 ## INSTALLATION
+ - Clone the Repo.
  - Geofield through composer - composer require 'drupal/geofield:^1.57'
  - ddev drush en migration_assignment (This will enable both migration_assignment & geofield.)
 
