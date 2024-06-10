@@ -11,7 +11,7 @@ Location field of the custom entity is dependent on Geofield contributed module 
 Same Needs to be installed 
 
 ## INSTALLATION
- - Clone the Repo.
+ - Clone the Repo into modules folder of a drupal site or clone into same.
  - Geofield through composer - composer require 'drupal/geofield:^1.57'
  - ddev drush en migration_assignment (This will enable both migration_assignment & geofield.)
 
