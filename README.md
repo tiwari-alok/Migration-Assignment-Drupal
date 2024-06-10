@@ -25,3 +25,6 @@ For migration related configs refer submodule - Migrator.
 ## Managing Custom Entity
 - Structure >> Custom Entity
 - Path : /admin/structure/custom-entity
+
+## Video Demo 
+URL : https://drive.google.com/file/d/1YPTg6w6WeThwDdexpq-8dO9jA-ZBdBNX/view
