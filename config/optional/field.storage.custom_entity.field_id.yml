@@ -1,0 +1,21 @@
+uuid: f5b9078d-fdd2-4927-a7a6-27d2951a45e5
+langcode: en
+status: true
+dependencies:
+  module:
+    - migration_assignment
+id: custom_entity.field_id
+field_name: field_id
+entity_type: custom_entity
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

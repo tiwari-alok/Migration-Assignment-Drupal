@@ -1,0 +1,21 @@
+uuid: a9897e0e-f390-45ab-9a26-a3c19f750ed3
+langcode: en
+status: true
+dependencies:
+  module:
+    - migration_assignment
+id: custom_entity.field_city
+field_name: field_city
+entity_type: custom_entity
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

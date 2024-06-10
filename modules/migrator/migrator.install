@@ -1,0 +1,24 @@
+<?php
+
+declare(strict_types=1);
+
+/**
+ * @file
+ * Install, update and uninstall functions for the Migration Assistant module.
+ */
+
+
+use Drupal\Core\File\FileSystemInterface;
+
+/**
+ * Implements hook_install().
+ */
+function migrator_install(): void {
+  // Create the JSON file into public directory and ensure it's writable.
+  $directory = \Drupal::config('system.file')->get('default_scheme') . '://json_files';
+  \Drupal::service('file_system')->prepareDirectory($directory, FileSystemInterface::CREATE_DIRECTORY | FileSystemInterface::MODIFY_PERMISSIONS);
+
+  $module_path = \Drupal::moduleHandler()->getModule('migrator')->getPath();
+  $file_source = $module_path . '/json_files/cities.json';
+  \Drupal::service('file_system')->copy($file_source, $directory . '/cities.json', FileSystemInterface::EXISTS_REPLACE);
+}

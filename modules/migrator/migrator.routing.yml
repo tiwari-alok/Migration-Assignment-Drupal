@@ -1,0 +1,7 @@
+migrator.migration_mapping_form:
+  path: 'admin/structure/custom-entity/migration-mapping'
+  defaults:
+    _form: '\Drupal\migrator\Form\FieldMappingForm'
+    _title: 'Migration Mapping form'
+  requirements:
+    _permission: 'administer custom_entity'

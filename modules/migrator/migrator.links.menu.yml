@@ -1,0 +1,6 @@
+migrator.migration_mapping_form:
+  title: 'Migration Mapping form'
+  description: 'Update Migration Mapping Fields.'
+  route_name:  migrator.migration_mapping_form
+  parent: system.admin_config_development
+  weight: -100

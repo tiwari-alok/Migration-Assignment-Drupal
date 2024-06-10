@@ -1,0 +1,7 @@
+name: 'Migration Assignment'
+type: module
+description: 'Creates Custom Entity &amp; has sub module for migration.'
+package: Custom
+core_version_requirement: ^10 || ^11
+dependencies:
+  - geofield:geofield

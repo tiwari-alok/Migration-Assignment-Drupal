@@ -1,0 +1,20 @@
+uuid: 3ebd5118-45af-4429-bf3d-491a0aed45ea
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.custom_entity.field_state
+  module:
+    - migration_assignment
+id: custom_entity.custom_entity.field_state
+field_name: field_state
+entity_type: custom_entity
+bundle: custom_entity
+label: state
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,9 @@
+name: 'Migration Assistant'
+type: module
+description: 'Creates Custom Entity &amp; has sub module for migration.'
+package: Custom
+core_version_requirement: ^10 || ^11
+dependencies:
+  - migration_assignment:migration_assignment
+  - drupal:migrate
+  - migrate_plus:migrate_plus

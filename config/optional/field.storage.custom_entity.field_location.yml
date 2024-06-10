@@ -1,0 +1,20 @@
+uuid: 938aa63c-bc51-4b85-ba2f-81e15c8f7357
+langcode: en
+status: true
+dependencies:
+  module:
+    - geofield
+    - migration_assignment
+id: custom_entity.field_location
+field_name: field_location
+entity_type: custom_entity
+type: geofield
+settings:
+  backend: geofield_backend_default
+module: geofield
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

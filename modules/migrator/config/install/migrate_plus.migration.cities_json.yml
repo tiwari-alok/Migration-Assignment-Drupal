@@ -1,0 +1,55 @@
+# This migration imports Cities JSON file to custom entity.
+id: cities_json
+label: JSON feed of Cities
+migration_group: default
+source:
+  plugin: url
+  data_fetcher_plugin: file
+  # Using Migrateplus json plugin for parsing.
+  data_parser_plugin: json
+  # Relative URL Of the JSon file.
+  urls:
+    - 'public://json_files/cities.json'
+  fields:
+    -
+      name: _id
+      label: 'id'
+      selector: _id
+    -
+      name: city
+      label: 'City Name'
+      selector: city
+    -
+      name: loc
+      label: 'location'
+      selector: loc
+    -
+      name: pop
+      label: 'Population'
+      selector: pop
+    -
+      name: state
+      label: 'State'
+      selector: state
+# Using ID as Unique identifier
+  ids:
+    _id:
+      type: string
+process:
+  field_id: _id
+  title: city
+  field_location:
+    plugin: geofield_latlon
+    source:
+      - loc/0
+      - loc/1
+  field_pop: pop
+  field_state: state
+# Custom entity as destination
+destination:
+  plugin: 'entity:custom_entity'
+migration_dependencies: {  }
+dependencies:
+  enforced:
+    module:
+      - migrator

@@ -1,0 +1,16 @@
+field_mapping.settings:
+  type: config_object
+  label: 'Field Mapping settings'
+  mapping:
+    id:
+      type: text
+      label: 'ID'
+    city:
+      type: text
+      label: 'City'
+    pop:
+      type: text
+      label: 'Population'
+    state:
+      type: text
+      label: 'State'

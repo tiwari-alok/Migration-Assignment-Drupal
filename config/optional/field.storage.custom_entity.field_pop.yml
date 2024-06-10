@@ -1,0 +1,21 @@
+uuid: 82ee69f7-3969-4706-85cc-d09219420e6f
+langcode: en
+status: true
+dependencies:
+  module:
+    - migration_assignment
+id: custom_entity.field_pop
+field_name: field_pop
+entity_type: custom_entity
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

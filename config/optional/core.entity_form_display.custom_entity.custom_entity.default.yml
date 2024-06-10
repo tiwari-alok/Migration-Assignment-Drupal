@@ -1,0 +1,74 @@
+uuid: 6963f022-6dfb-48a5-837d-6ae2d74ab941
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.custom_entity.custom_entity.field_city
+    - field.field.custom_entity.custom_entity.field_id
+    - field.field.custom_entity.custom_entity.field_location
+    - field.field.custom_entity.custom_entity.field_pop
+    - field.field.custom_entity.custom_entity.field_state
+  module:
+    - geofield
+    - migration_assignment
+id: custom_entity.custom_entity.default
+targetEntityType: custom_entity
+bundle: custom_entity
+mode: default
+content:
+  field_city:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_id:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_location:
+    type: geofield_latlon
+    weight: 3
+    region: content
+    settings:
+      html5_geolocation: false
+    third_party_settings: {  }
+  field_pop:
+    type: string_textfield
+    weight: 4
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_state:
+    type: string_textfield
+    weight: 5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 6
+    region: content
+    settings:
+      display_label: false
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true

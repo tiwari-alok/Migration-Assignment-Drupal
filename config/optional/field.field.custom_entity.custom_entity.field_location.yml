@@ -1,0 +1,21 @@
+uuid: df8ebb31-7598-463f-ba8e-e42e8baa9fa6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.custom_entity.field_location
+  module:
+    - geofield
+    - migration_assignment
+id: custom_entity.custom_entity.field_location
+field_name: field_location
+entity_type: custom_entity
+bundle: custom_entity
+label: Location
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: geofield

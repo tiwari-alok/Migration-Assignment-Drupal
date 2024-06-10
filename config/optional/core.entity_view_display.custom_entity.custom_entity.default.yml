@@ -1,0 +1,89 @@
+uuid: 29bf19a0-3a7d-4a29-bde6-fa119e378e93
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.custom_entity.custom_entity.field_city
+    - field.field.custom_entity.custom_entity.field_id
+    - field.field.custom_entity.custom_entity.field_location
+    - field.field.custom_entity.custom_entity.field_pop
+    - field.field.custom_entity.custom_entity.field_state
+  module:
+    - geofield
+    - migration_assignment
+id: custom_entity.custom_entity.default
+targetEntityType: custom_entity
+bundle: custom_entity
+mode: default
+content:
+  created:
+    type: timestamp
+    label: above
+    settings:
+      date_format: medium
+      custom_date_format: ''
+      timezone: ''
+      tooltip:
+        date_format: long
+        custom_date_format: ''
+      time_diff:
+        enabled: false
+        future_format: '@interval hence'
+        past_format: '@interval ago'
+        granularity: 2
+        refresh: 60
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_city:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_id:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_location:
+    type: geofield_default
+    label: above
+    settings:
+      output_format: wkt
+      output_escape: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_pop:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_state:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  status:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 5
+    region: content
+hidden: {  }
